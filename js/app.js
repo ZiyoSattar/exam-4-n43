@@ -51,7 +51,7 @@ let renderMovies = (movies) => {
 // FETCH SEARCHING MOVIES || SPINNER
 const searchMovies = async (movies = "", page) => {
   try {
-    const responce = await fetch(`http://www.omdbapi.com/?s=${movies}&apikey=d05f1aad&page=${page}`);
+    const responce = await fetch(`https://www.omdbapi.com/?s=${movies}&apikey=d05f1aad&page=${page}`);
 
     let data = await responce.json();
     moviesArr = data.Search;
